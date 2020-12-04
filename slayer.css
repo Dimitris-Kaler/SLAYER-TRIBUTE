@@ -1,0 +1,110 @@
+  
+
+	ul{
+  		padding:0px;
+  		margin:0px;
+  		background-color: grey;
+  	}
+  	li{
+  		display: inline-block;
+  		margin-right: 15px;
+
+  	}
+  	li a{display:block;
+  		text-decoration:none;
+  		background-color: grey;
+  		color:white;
+  		padding:10px;
+  		cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+  	}
+  	li a:hover{
+  		background-color:black;
+  		padding: 10px;
+  	}
+  		.discography{
+  			display: flex;
+  			flex-wrap: wrap;
+  			justify-content: center;
+  		}
+  		.albums img{
+  			width: 350px;
+  			height:250px;
+  			transition: all 1s;
+  		}
+  			.albums p{
+  				font-size: 20px;
+  				color:red;
+  			}
+  			.albums img:hover{transform: scale(1.2);}
+  			hr{
+  				border-color:red;
+  				border-width:2px;
+  			}
+  			.albums a{cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;}
+          h1{
+      font-size: 50px;
+      text-align: center;
+      color: red;
+    }
+    .albumsongs{
+      color:white;
+      text-align: center;
+      font-size: 30px;
+    }
+    .songs{
+      padding:15px;
+    }
+     .gif{
+      display: block;
+      margin-left:auto;
+      margin-right: auto;
+      width: 350px;
+      height:250px;
+    }
+    .member{background-color: black;
+      text-align:center; 
+      font-size:30px;
+      color:red;
+    }
+    .box{
+      background-color: black;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      width:90%;
+      height:520px;
+       border:5px;
+      border-style:solid;
+      border-color: red; 
+    }
+    .imgmember{
+      float:left;
+      width:180px;
+      height:320px;
+    }
+    .gal{margin-bottom: 20px;
+      margin-top: 20px;
+      width:400px;
+      height:300px;
+      transition: all 2s;
+    }
+    .gal:hover{
+      transform: scale(1.2);
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+  }
+    .pics{display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+    }
+    audio{border:2px solid black;
+      box-shadow:2px 5px #222222;
+    }
+    audio::-webkit-media-controls-panel{background-color: #880000;
+    }
+  audio::-webkit-media-controls-play-button:{
+ cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;}
+
+  
+
+   

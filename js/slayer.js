@@ -37,7 +37,6 @@ for(img of images){
 
 function closeFunction(){
     modal.style.display="none"
-
 }
 
-close.onclick=closeFunction()
+close.addEventListener("click",closeFunction)

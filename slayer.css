@@ -1,110 +1,507 @@
-  
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
 
+#firstPage,#discographyPage,#bandMember,#videoClips,#gallery{
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(images/slayer-band.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: all 1s;
+}
+/********SLAYER LOGO **********************/
+#slayer-logo{
+  margin:auto;
+  width:30rem;/*650px*/
+  height:49vh/*26rem;450px*/
+}
+  
+  /********navigation bar **********/
+  .toggle-button {
+		position:absolute;
+		top:.75rem;
+		right:1rem;
+		display:none;
+		flex-direction: column;
+		justify-content: space-between;
+		width:30px;
+		height:21px;
+
+	}
+  .navbar{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: grey;
+		color:white;
+	}
 	ul{
   		padding:0px;
   		margin:0px;
+      display:flex;
   		background-color: grey;
-  	}
-  	li{
-  		display: inline-block;
-  		margin-right: 15px;
+  	 }
+  li{
+    list-style:none;
+  	/* display: inline-block;
+  	margin-right: 15px; */
 
   	}
-  	li a{display:block;
-  		text-decoration:none;
-  		background-color: grey;
-  		color:white;
-  		padding:10px;
-  		cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+
+  li a{
+    display:block;
+  	text-decoration:none;
+  	background-color: grey;
+  	color:white;
+  	padding:10px;
+  	cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
   	}
-  	li a:hover{
-  		background-color:black;
-  		padding: 10px;
+  li a:hover{
+  	background-color:black;
+  	padding: 10px;
   	}
-  		.discography{
-  			display: flex;
-  			flex-wrap: wrap;
-  			justify-content: center;
-  		}
-  		.albums img{
-  			width: 350px;
-  			height:250px;
-  			transition: all 1s;
-  		}
-  			.albums p{
-  				font-size: 20px;
-  				color:red;
-  			}
-  			.albums img:hover{transform: scale(1.2);}
-  			hr{
-  				border-color:red;
-  				border-width:2px;
-  			}
-  			.albums a{cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;}
-          h1{
-      font-size: 50px;
-      text-align: center;
-      color: red;
+    .bar{
+      height:3px;
+      width:100%;
+      background-color:white;
+      border-radius:10px;
     }
-    .albumsongs{
-      color:white;
-      text-align: center;
-      font-size: 30px;
+    /*****************DISCOGRAPHY PAGE ********************/
+  .discography{
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	}
+  .albums img{
+  	width: 350px;
+  	height:250px;
+  	transition: all 1s;
+  	}
+  .albums p{
+  	font-size: 20px;
+  	color:red;
+  	}
+  .albums img:hover{
+    transform: scale(1.2);
+  }
+  hr{
+  	border-color:red;
+  	border-width:2px;
+  }
+  .albums a{
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+  }
+  h1{
+    font-size: 50px;
+    text-align: center;
+    color: red;
+  }
+ .albumsongs{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+  }
+ .songs{
+    padding:15px;
+  }
+.gif{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 350px;
+  height:250px;
+}
+
+.gal{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width:400px;
+  height:300px;
+  transition: all 2s;
+  }
+.gal:hover{
+  transform: scale(1.2);
+  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+}
+
+audio{
+  border:2px solid black;
+  box-shadow:2px 5px #222222;
+}
+audio::-webkit-media-controls-panel{
+  background-color: #880000;
+}
+audio::-webkit-media-controls-play-button{
+ cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
+}
+
+/*******FIRST PAGE********/
+
+h1{
+text-align: center;font-size: 40px;
+}
+.logo{
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+}
+a{
+  text-decoration:none;
+}
+#years{
+  text-align:center;
+  font-size:80px;
+  color:red;
+}
+
+/************AUDIO*******/
+.listen-paragraph{
+ color:white;
+}
+/******SHO NO MERCY *****************/
+#show-no-mercy{
+  background: url(images/show-no-mercy-cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/******HELL AWAITS ********************/
+#hell-awaits{
+background: url(images/hell-awaits-cover.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+
+/*********REIGN IN BLOOD***********/
+#reign-in-blood{
+  background: url(images/reign-in-blood-cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*************SOUTH OF HEAVEN *************/
+#south-of-heaven{
+  height:100%;
+background: url(images/south-of-heaven-cover.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/********SEASONS IN THE ABYSS **************/
+#seasons-in-the-abyss{
+width:100%;
+background: url(images/seasons-in-the-abyss-cover.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}  
+/*******DIVINE INTERVENTION ************/
+  #divine-intervention{
+  background: url(images/divine-intervention-cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }  
+  /*****************8UNDISPUTED ATTITUDE ********************/
+  #undisputed-attitude{
+    background: url(images/undisputed-attitude-cover.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /*****************DIABOLUS IN MUSICA********************/
+  #diabolus-in-musica{
+    background: url(images/diabolus-in-musica-cover.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /*****************GOD HATE US ALL********************/
+  #god-hate-us-all{
+    background: url(images/god-hates-us-all-cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+   /*****************CHRIST ILLUSION********************/
+   #christ-illusion{
+    background: url(images/christ-illusion-cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  /*****************WORLD PAINTED BLOOD********************/
+  #world-painted-blood{
+    background: url(images/world-painted-blood-cover.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  /*****************REPENTLESS********************/
+  #repentless{
+    background: url(images/repentless-cover.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+  /***********BAND MEMBERS PAGE********************/
+  .member{
+    background-color: black;
+    text-align:left; 
+    font-size:2.5rem;
+    color:red;
     }
-    .songs{
-      padding:15px;
+  
+  .imgmember{
+    float:left;
+    /* width:180px; */
+    /* height:320px; */
+    width: 20%;
+    height:40vh;
+  }
+ 
+  .box-member{
+    background-color: black;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    height:85vh;
+    border:2px solid red;
+    text-overflow: ellipsis;
+    
     }
-     .gif{
-      display: block;
-      margin-left:auto;
-      margin-right: auto;
-      width: 350px;
-      height:250px;
-    }
-    .member{background-color: black;
-      text-align:center; 
-      font-size:30px;
-      color:red;
-    }
-    .box{
+    .box-submember{
       background-color: black;
+      text-align:center;
       display:block;
       margin-left: auto;
       margin-right: auto;
       width:90%;
-      height:520px;
-       border:5px;
-      border-style:solid;
-      border-color: red; 
+      height:30vh;
+      border:2px solid red;
+      }
+  .member-description{
+    color:red;
+    /* text-align:center; */
+    font-size:1.2vw;
+  } 
+  .member-description span{
+    margin-left:20px;
+  }
+  .instrument-played{
+    color:red;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom:2rem;
+  }
+  .other-musicians{
+    text-align:center;
+    margin:auto;
+  }
+  .submember{
+    font-size:2.5rem;
+    color:red;
+    text-align:center;
+  }
+
+  /*********VIDEOCLIPS *******************/
+  /* #videoClips{
+    background: url(images/slayer-band.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } */
+  .video-box{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  .video-box p {
+    font-size: 50px;
+    float: left;
+    color: red;
+  }
+  .video-box video {
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 330px;
+  }
+
+  /**************GALLERY **********************/
+  .pics{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+  
+
+
+  @media screen and  (max-width: 600px){
+    .toggle-button{
+      display:flex;
+      z-index:6;
+    }
+    .nav-links{
+      display:none;
+      width:100%;
+    }
+    .navbar{
+      z-index:4;
+      height:40px;
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .nav-links ul{
+      flex-direction: column;
+      width:100%;
+    }
+    .nav-links ul li{
+      text-align:center;
+    }
+    .nav-links ul li a{
+      padding:.5rem 1rem
+    }
+    .nav-links.active{
+      z-index:4;
+      display:flex;
+    }
+    /***members*****/
+    .box-member{
+      height:65vh;
+      }
+   
+    .member-description{
+      color:red;
+      /* text-align:center; */
+      font-size:1.5vw;
+    } 
+    .member-description span{
+      margin-left:10px;
     }
     .imgmember{
       float:left;
-      width:180px;
-      height:320px;
+      /* width:180px; */
+      /* height:320px; */
+      width: 20%;
+      height:30vh;
     }
-    .gal{margin-bottom: 20px;
-      margin-top: 20px;
-      width:400px;
-      height:300px;
-      transition: all 2s;
-    }
-    .gal:hover{
-      transform: scale(1.2);
-    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
   }
-    .pics{display:flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-
+  @media screen and  (max-width: 333px){
+    .member{
+      background-color: black;
+      text-align:left; 
+      font-size:1rem;
+      color:red;
+      }
+      .instrument-played{
+        color:red;
+        text-align: left;
+        font-size: 0.8rem;
+        margin-bottom:1.2rem;
+      }
     }
-    audio{border:2px solid black;
-      box-shadow:2px 5px #222222;
-    }
-    audio::-webkit-media-controls-panel{background-color: #880000;
-    }
-  audio::-webkit-media-controls-play-button:{
- cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;}
-
-  
-
-   

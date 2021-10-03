@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="slayer.css">
    <link rel="shortcut icon" href="e5cf75d0a3c5fba1fc42f96eab136f47.ico"/>
 	
-	 <style>
+	 <!-- <style>
   	body,html{
   		width: 100%;
   height: 100%;
@@ -17,19 +17,28 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} -->
   </style>
 </head>
 <header>
-  <ul>
-     <li><a href="slayer.html">HOME</a></li>
-    <li><a href="slayer discography.html">DISCOGRAPHY</a></li>
-    <li><a href="videoclips.html">VIDEOCLIPS</a></li>
-    <li><a href="band members.html">BAND MEMBERS</a></li>
-    <li><a href="gallery.html">GALLERY</a></li>
-  </ul>
+  <nav class="navbar">
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="nav-links">
+      <ul>
+        <li><a href="slayer.html">HOME</a></li>
+        <li><a href="slayer discography.html">DISCOGRAPHY</a></li>
+        <li><a href="videoclips.html">VIDEOCLIPS</a></li>
+        <li><a href="band members.html">BAND MEMBERS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </div>
+  </nav>
   </header>
-<body>
+<body id="repentless">
 	<h1><strong>REPENTLESS</strong></h1>
 	<br>
 	<ol class="albumsongs">
@@ -47,12 +56,13 @@
     <li class="songs">PRIDE IN PREJUDICE</li><br>
 	</ol>
 	<br>
-   <img src="slayer best.gif"class="gif">
+   <img src="images/slayer best.gif"class="gif">
    <br>
-	<p style="color:white;">Listen Repentless:</p>
+   <p class="listen-paragraph">Listen Repentless:</p>
 <audio controls>
-	 <source src="Slayer- Repentless (Lyrics).mp3" type="audio/mpeg">
+	 <source src="songs/Slayer- Repentless (Lyrics).mp3" type="audio/mpeg">
 	
 </audio>
+<script type="text/javascript" src="js/slayer.js"></script>
 </body>
 </html>

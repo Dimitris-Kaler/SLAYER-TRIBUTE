@@ -11,24 +11,29 @@
   		width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background: url(world-painted-blood-cover.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+ 
 }
   </style>
 </head>
   <header>
-  <ul>
-     <li><a href="slayer.html">HOME</a></li>
-    <li><a href="slayer discography.html">DISCOGRAPHY</a></li>
-    <li><a href="videoclips.html">VIDEOCLIPS</a></li>
-    <li><a href="band members.html">BAND MEMBERS</a></li>
-    <li><a href="gallery.html">GALLERY</a></li>
-  </ul>
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="slayer.html">HOME</a></li>
+          <li><a href="slayer discography.html">DISCOGRAPHY</a></li>
+          <li><a href="videoclips.html">VIDEOCLIPS</a></li>
+          <li><a href="band members.html">BAND MEMBERS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
-<body>
+<body id="world-painted-blood">
 	<h1><strong>WORLD PAINTED BLOOD</strong></h1>
 	<br>
 	<ol class="albumsongs">
@@ -45,12 +50,13 @@
     <li class="songs">NOT OF THIS GOD</li><br>
 	</ol>
 	<br>
-      <img src="slayer best.gif"class="gif">
+      <img src="images/slayer best.gif"class="gif">
    <br>
-	<p style="color:white;">Listen Hate Worldwide:</p>
+   <p class="listen-paragraph">Listen Hate Worldwide:</p>
 <audio controls>
-	 <source src="Hate Worldwide.mp3" type="audio/mpeg">
+	 <source src="songs/Hate Worldwide.mp3" type="audio/mpeg">
 	
 </audio>
+<script type="text/javascript" src="js/slayer.js"></script>
 </body>
 </html>

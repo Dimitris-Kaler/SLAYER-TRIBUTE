@@ -72,6 +72,48 @@
       background-color:white;
       border-radius:10px;
     }
+
+    /******SLAYER.HTML *****************/
+    /* .text{
+      float:left;
+    } */
+    #display-show{
+      float:right;
+    }
+    #early{
+      margin-top:200px;
+      height:800px;
+      background:url(images/early-days.jpg) center center fixed;
+      background-size:cover;
+      background-repeat:no-repeat;
+      color:red;
+    }
+    .history-h3{
+      font-size:3rem;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+    #show-and-hell{
+      height:700px;
+      background:url(images/slayer-early-days.jpg) center center fixed;
+      background-size:cover;
+      background-repeat:no-repeat;
+      color:red;
+    }
+    #slides{
+      width:400px;
+      height:400px;
+  }
+  #reign-in-blood{
+    height:700px;
+    background:url(images/slayer-reignInblood.jpg) center center fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:red;
+  }
+
+    
+    
     /*****************DISCOGRAPHY PAGE ********************/
   .discography{
   	display: flex;

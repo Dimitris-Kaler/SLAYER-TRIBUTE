@@ -10,33 +10,28 @@ function navbar1(){
     console.log("toggle")
 navbarLinks.classList.toggle("active");
 }
-
-
-
 toggleButton.addEventListener("click",navbar1);
 
+//SHOW PIC FOR SLAYER HTML
 
-///MODAL FOR IMAGES
+var slides=document.getElementById("slides")
+var earlyPics=["images/slayer-kids.jfif","images/Slayer-Early-Days-underground.png","images/slayer-early-days.jpg","images/show-hell.jpg"]
 
-var modal = document.getElementById("myModal");
-var images=document.getElementsByClassName("gal")
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-var close=document.getElementsByClassName("close")[0]
-
-let display=(event)=>{
-modal.style.display="block"
-modalImg.src=event.target.src
-captionText.innerHTML = event.target.alt;
-}
-
-for(img of images){
-    img.addEventListener("click",display)
-}
+var i=0
+setInterval(function(){
+    if(i===earlyPics.length){
+        i=0
+    }
+    slides.src=earlyPics[i]
+    slides.style.backgroundSize="cover"
+    i++
+    
+},2000)
 
 
-function closeFunction(){
-    modal.style.display="none"
-}
 
-close.addEventListener("click",closeFunction)
+
+
+
+
+

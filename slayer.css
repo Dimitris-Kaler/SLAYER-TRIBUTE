@@ -123,10 +123,10 @@
   margin-top: 20px;
   width:400px;
   height:300px;
-  transition: all 2s;
+  border:5px solid black
   }
 .gal:hover{
-  transform: scale(1.2);
+  border-color:red;
   cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 

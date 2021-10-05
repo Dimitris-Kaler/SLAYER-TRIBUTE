@@ -93,10 +93,12 @@ html,body{
     .history-section{
       height:42rem;
       width:100%;
-      
-      /* background-color:black; */
-
       color:red;
+    }
+    .history-section h4{
+      color:rgb(66, 11, 11);
+      text-align:center;
+      font-size:3rem;
     }
     .display-show{
       float:right;
@@ -508,6 +510,9 @@ background-size: cover;
   }
   .text{
   font-size:0.7rem;
+  }
+  .history-section h4{
+    font-size:1.8rem;
   }
 }
   

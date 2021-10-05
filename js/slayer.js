@@ -77,16 +77,19 @@ displaySlides(slides7,pics2011_19)
 
 let fadeElements=document.querySelectorAll(".fade-out")
 
-console.log(fadeElements)
+// console.log(fadeElements)
 let options={
-    threshold:1,
-    rootMargin:"0px 0px -200px 0px"
+    // threshold:1,
+    // rootMargin:"0px 0px -10px 0px"
 }
 let appearOnBrowser= new IntersectionObserver(function(entries,appearOnBrowser){
     entries.forEach(entry=>{
+        console.log(entry)
         if(!entry.isIntersecting){
+          
             return;
         }else{
+            
             entry.target.classList.add("fade-in")
             appearOnBrowser.unobserve(entry.target)
         }
@@ -95,8 +98,12 @@ let appearOnBrowser= new IntersectionObserver(function(entries,appearOnBrowser){
 
 
 fadeElements.forEach(element=>{
+    console.log("p eiste")
     appearOnBrowser.observe(element)
 })
+
+
+
 
 
 

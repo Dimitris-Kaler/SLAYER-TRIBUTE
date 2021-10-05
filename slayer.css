@@ -589,6 +589,7 @@ background-size: cover;
 
 
     /*******FOOOTER ********/
+
     footer{
       width:100%;
       padding:5rem;
@@ -618,6 +619,14 @@ background-size: cover;
 
     footer div{
       background-color:rgb(8, 8, 8);
+    }
+    .footer-ref{
+      background-color:rgb(8,8,8);
+      color:red;
+    }
+    .footer-ref:hover{
+      color:rgb(228, 102, 102);
+      background-color:rgb(8,8,8);
     }
     .fade-out{
       /* margin:auto;

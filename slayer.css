@@ -3,6 +3,10 @@
   margin:0;
   box-sizing:border-box;
 }
+html,body{
+  width:100%;
+  height:100%;
+}
 
 #firstPage,#discographyPage,#bandMember,#videoClips,#gallery{
   width: 100%;
@@ -35,6 +39,7 @@
 
 	}
   .navbar{
+    width:100%;
 		display:flex;
 		justify-content: space-between;
 		align-items: center;
@@ -53,6 +58,10 @@
   	margin-right: 15px; */
 
   	}
+    .nav-right{
+      margin-left: auto;
+
+    }
 
   li a{
     display:block;
@@ -72,6 +81,79 @@
       background-color:white;
       border-radius:10px;
     }
+    .nav-links{
+      width:100%;
+    }
+
+    /******SLAYER.HTML *****************/
+    /*******FIRST PAGE********/
+    /* .text{
+      float:left;
+    } */
+    .history-section{
+      height:42rem;
+      width:100%;
+      
+      /* background-color:black; */
+
+      color:red;
+    }
+    .display-show{
+      float:right;
+    }
+    .display-show1{
+      float:left;
+    }
+     #early{
+      margin-top:200px;
+       /* background-color:black;  */
+       /* background:url(images/early-days.jpg) center center fixed; */
+      background-size:cover;
+      background-repeat:no-repeat; 
+      /* mix-blend-mode: multiply; */
+      
+    } 
+   
+    .history-h3{
+     
+      text-align:center;
+      font-size:3rem;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+    .history-head{
+      max-width:100%;
+    }
+    .text{
+      overflow-wrap: break-word;
+      font-size:1rem;
+      line-height: 1.5rem;
+      background-color:black;
+      max-height:550px;
+    }
+    
+  .slides-box{
+    width:25%;
+    height:42vh;
+  }
+  
+h1{
+  text-align: center;font-size: 40px;
+  }
+  .logo{
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  a{
+    text-decoration:none;
+  }
+  #years{
+    text-align:center;
+    font-size:80px;
+    color:red;
+  }
+  
     /*****************DISCOGRAPHY PAGE ********************/
   .discography{
   	display: flex;
@@ -141,24 +223,7 @@ audio::-webkit-media-controls-play-button{
  cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto !important;
 }
 
-/*******FIRST PAGE********/
 
-h1{
-text-align: center;font-size: 40px;
-}
-.logo{
-  display:block;
-  margin-right: auto;
-  margin-left: auto;
-}
-a{
-  text-decoration:none;
-}
-#years{
-  text-align:center;
-  font-size:80px;
-  color:red;
-}
 
 /************AUDIO*******/
 .listen-paragraph{
@@ -430,17 +495,28 @@ background-size: cover;
   text-decoration: none;
   cursor: pointer;
 }
+@media screen and (max-width:800px){
+  .text{
+    font-size:0.8rem;
+  }
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
+  .text{
+  font-size:0.7rem;
+  }
 }
   
 
 
   @media screen and  (max-width: 600px){
+    .nav-right{
+      margin-left:0;
+    }
     .toggle-button{
       display:flex;
       z-index:6;
@@ -469,6 +545,10 @@ background-size: cover;
     .nav-links.active{
       z-index:4;
       display:flex;
+    }
+    .text{
+      font-size:0.6rem;
+      
     }
     /***members*****/
     .box-member{
@@ -504,4 +584,58 @@ background-size: cover;
         font-size: 0.8rem;
         margin-bottom:1.2rem;
       }
+    }
+
+
+
+    /*******FOOOTER ********/
+
+    footer{
+      width:100%;
+      padding:5rem;
+      background-color:rgb(8, 8, 8);
+      color:red;
+      display:flex;
+      flex-direction:row;
+      justify-content:space-around;
+    }
+    footer div{
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+    }
+    footer div ul{
+      background-color:rgb(8,8,8);
+      padding:2rem;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
+
+    }
+    footer div ul li{
+      background-color:rgb(8,8,8);
+      list-style:none;
+    }
+
+    footer div{
+      background-color:rgb(8, 8, 8);
+    }
+    .footer-ref{
+      background-color:rgb(8,8,8);
+      color:red;
+    }
+    .footer-ref:hover{
+      color:rgb(228, 102, 102);
+      background-color:rgb(8,8,8);
+    }
+    .fade-out{
+      /* margin:auto;
+      width:100%;
+      height:100%; */
+      opacity:0;
+      transition:opacity 250ms ease-in;
+    }
+    .fade-out.fade-in{
+      opacity:1;
+      
     }
